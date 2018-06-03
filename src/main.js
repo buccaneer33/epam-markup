@@ -1,7 +1,7 @@
 import './additional.js';
-import './header.css';
-import './body.css';
-import './footer.css';
+import './header.less';
+import './body.less';
+import './footer.less';
 
 document.write('Hello, webpack');
 
