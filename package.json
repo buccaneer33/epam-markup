@@ -19,11 +19,13 @@
     "babel-loader": "^7.1.4",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "less-loader": "^4.1.0",
     "lodash": "^4.17.10",
     "style-loader": "^0.21.0",
     "webpack": "^4.3.0"
   },
   "dependencies": {
+    "less": "^3.0.4",
     "node-static": "^0.7.10"
   }
 }
