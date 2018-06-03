@@ -2,56 +2,37 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Lecture_03</title>
-<link rel="stylesheet" href="bundle.css">
+<title>Epam-Markup</title>
+<link rel="stylesheet" href="css/bundle.css">
+<link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
-<header>
-	<hgroup>
-		<h1>Заголовок</h1>
-		<h2>Слоган</h2>
-	</hgroup>
-	<nav>
-		<ul>
-			<li>Пункт1</li>
-			<li>Пункт2</li>
-			<li>Пункт3</li>
-			<li>Пункт4</li>
-			<li>Пункт5</li>
-			<li>Пункт6</li>
-		</ul>
-	</nav>
-</header>
-<aside>
-	<h1>Боковая панель</h1>
-		<nav>
-		<ul>
-			<li>Пункт1</li>
-			<li>Пункт2</li>
-			<li>Пункт3</li>
-			<li>Пункт4</li>
-			<li>Пункт5</li>
-			<li>Пункт6</li>
-		</ul>
-	</nav>
-</aside>
-<section>
-	<h1>Основной заголовок</h1>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</section>
-<footer>
-	<h1>Заголовок футера</h1>
-	<nav>
-		<ul>
-			<li>Пункт1</li>
-			<li>Пункт2</li>
-			<li>Пункт3</li>
-			<li>Пункт4</li>
-			<li>Пункт5</li>
-			<li>Пункт6</li>
-		</ul>
-	</nav>
-</footer>
-<script src="app.js" type="text/javascript"></script>
+	<section class="wrapper">
+			<aside class="left_column">
+				<h2 class="left_column__header">
+					SOME <br />
+					NAME
+				</h2>
+				<nav class="left_column__navigation">
+					<ul class="left_column__navigation_list">
+							<li class="left_column__navigation_item">
+								<a class="left_column__navigation_link" href="#portfolio">PORTFOLIO</a>
+							</li>
+							<li  class="left_column__navigation_item">
+								<a class="left_column__navigation_link" href="#about">ABOUT ME</a>
+							</li>
+							<li  class="left_column__navigation_item">
+							<a class="left_column__navigation_link" href="#contacts">CONTACTS</a>
+							</li>
+					<ul>
+				</nav>
+			</aside>
+			<section class="main_column">
+				<header class="header"></header>
+				<article class="about_me"></article>
+				<article class="contact_me"></article>
+				<footer class="footer"></footer>
+			</section>
+	</section>
 </body>
 </html>
