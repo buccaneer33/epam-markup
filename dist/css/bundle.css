@@ -223,47 +223,6 @@ body {
 .header {
   background-color: #f1f1f1;
 }
-.header__galery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: stretch;
-  max-width: 950px;
-}
-.header__galery--item {
-  flex-grow: 1;
-  height: 350px;
-  width: 250px;
-  margin: 1px;
-}
-.header__galery--img {
-  height: 100%;
-  width: 100%;
-}
-.header__control {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 0;
-}
-.header__control-item {
-  height: 25px;
-  width: 25px;
-  text-align: center;
-  padding: 7px 4px 0px;
-  font-size: 13px;
-  cursor: pointer;
-  border: 1px solid #f1f1f1;
-}
-.header__control-item--active {
-  background-color: #000000;
-  border: 1px solid #000000;
-  color: #ffffff;
-}
 .left_column {
   background-color: #ffffff;
   width: 240px;
@@ -290,16 +249,57 @@ body {
   position: relative;
   right: -50px;
 }
-.left_column__navigation {
+.navigation {
   margin-top: 90px;
   text-align: center;
 }
-.left_column__navigation_list {
+.navigation__list {
   list-style-type: none;
   padding: 0px;
 }
-.left_column__navigation_link {
+.navigation__link {
   text-decoration: none;
   color: #b1b1b1;
   font-size: 11px;
+}
+.galery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  max-width: 950px;
+}
+.galery__item {
+  flex-grow: 1;
+  height: 350px;
+  width: 250px;
+  margin: 1px;
+}
+.galery__item-img {
+  height: 100%;
+  width: 100%;
+}
+.slider_control {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+}
+.slider_control__item {
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  padding: 7px 4px 0px;
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid #f1f1f1;
+}
+.slider_control__item--active {
+  background-color: #000000;
+  border: 1px solid #000000;
+  color: #ffffff;
 }

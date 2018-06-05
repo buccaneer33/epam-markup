@@ -12,7 +12,7 @@
     "url": "git+https://github.com/buccaneer33/epam-markup.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "buccaneer",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",

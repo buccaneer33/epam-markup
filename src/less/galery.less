@@ -1,0 +1,20 @@
+.galery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  max-width:950px;
+
+  &__item{
+    flex-grow: 1;
+    height: 350px;
+    width: 250px;
+    margin: 1px;
+
+    &-img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
