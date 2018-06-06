@@ -1,7 +1,5 @@
 .content {
-  background-color: #616161;
   text-align: center;
-  color: #f1f1f1;
 }
 .about_me {
   width: 60%;
@@ -80,7 +78,6 @@
   justify-content: space-around;
 }
 .contact {
-  background-color: #f1f1f1;
   width: 60%;
   margin: 0 auto;
   border-bottom: 1px solid #f1f1f1;
@@ -92,13 +89,6 @@
 .contact__input {
   width: 100%;
   height: 20px;
-}
-.contact__submit {
-  width: 100%;
-  height: 20px;
-  background-color: #000000;
-  color: #ffffff;
-  padding: 10px 0 25px;
 }
 body {
   display: flex;
@@ -137,15 +127,16 @@ body {
   font-size: 11px;
 }
 .footer__mini_img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  padding-right: 20px;
 }
 .footer__item_post {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: stretch;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: flex-start;
   padding: 10px 10px;
 }
 .footer__item_div {
@@ -174,7 +165,7 @@ body {
   flex-basis: 300px;
   padding-top: 100px;
   position: fixed;
-  left: 126px;
+  left: 12%;
   top: 0px;
 }
 .main_column {
@@ -185,7 +176,7 @@ body {
   flex-wrap: nowrap;
   flex-flow: column;
   position: relative;
-  right: 12px;
+  left: calc(2% - 68px);
 }
 .navigation {
   margin-top: 90px;
@@ -237,15 +228,16 @@ body {
   align-items: stretch;
   justify-content: space-around;
 }
-.v-card_point {
+.v-card__point {
+  text-align: center;
   padding: 10px 0;
   font-size: 12px;
 }
-.v-card_point > span {
+.v-card__point > span {
   font-size: 18px;
 }
-.v-card_button {
-  background-color: #b7b7b7;
+.v-card__button {
+  margin: 0 auto;
   padding: 20px 0;
 }
 .v-card_link {
@@ -283,6 +275,7 @@ body {
 .v-card--black {
   background-color: #272727;
   color: #737373;
+  font-size: 18px;
 }
 .v-card--black:hover {
   background-color: #000000;
@@ -293,17 +286,20 @@ body {
   color: #272727;
   border-bottom: 1px solid #b8b8b8;
 }
-.v-card--grey:hover {
-  background-color: #f1f1f1;
-  color: #000000;
-}
 .v-card--d_grey {
-  background-color: #000000;
+  background-color: #bfbfbf;
   color: #272727;
 }
 .v-card--d_grey:hover {
   background-color: #f1f1f1;
   color: #000000;
+}
+.content--theme {
+  color: #f1f1f1;
+  background-color: #616161;
+}
+.contact--theme {
+  background-color: #f1f1f1;
 }
 .theme-link--white {
   cursor: pointer;
@@ -386,6 +382,14 @@ body {
   padding: 8px;
   text-decoration: none;
 }
+.button--big {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0 25px;
+  height: 20px;
+  text-decoration: none;
+}
 .button--grey {
   border: 1px solid #f1f1f1;
   background-color: #f1f1f1;
@@ -395,5 +399,16 @@ body {
 .button--grey:hover {
   color: #f1f1f1;
   background-color: #000000;
+  transition: 0.4s;
+}
+.button--black {
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: #ffffff;
+  transition: 0.4s;
+}
+.button--black:hover {
+  color: #000000;
+  background-color: #ffffff;
   transition: 0.4s;
 }
