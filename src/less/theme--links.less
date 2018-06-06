@@ -72,15 +72,35 @@
   padding: 8px;
   text-decoration: none;
 }
+.button--big{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0 25px;
+  height: 20px;
+  text-decoration: none;
+}
 .button--grey{
-  border: 1px solid @color-3;
-  background-color: @color-3;
+  border: 1px solid @color-1;
+  background-color: @color-1;
   color: @color-7;
   transition: 0.4s;
 
   &:hover{
-    color: @color-3;
+    color: @color-1;
     background-color: @color-7;
+    transition: 0.4s;
+  }
+}
+.button--black{
+  border: 1px solid @color-7;
+  background-color: @color-7;
+  color: @color-2;
+  transition: 0.4s;
+
+  &:hover{
+    color: @color-7;
+    background-color: @color-2;
     transition: 0.4s;
   }
 }
