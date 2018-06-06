@@ -1,5 +1,4 @@
 .content{
-      min-width: 900px;
       background-color: @color-4;
       text-align: center;
       color: @color-3;
@@ -17,18 +16,20 @@
     &__email{
       width: 100%;
       text-align: left;
-      &--link{color: @color-2; text-decoration: none; }
+      display: block;
+      padding: 9px 0;
+
     }
     &__phone{
       width: 100%;
       text-align: left;
-      &--link{ color: @color-2; text-decoration: none; }
+      display: block;
+      padding: 15px 0;
     }
   }
 .skills{
   width: 60%;
   margin: 0 auto;
-  border-bottom: 1px solid  @color-3;
   padding-bottom: 40px;
 
   &__header{
@@ -69,18 +70,7 @@
         }
   }//&__progressbar
   &__button{
-    width: 100%;
-    text-align: left;
-    padding-top: 20px;
-
-    &_item{
-      border: 1px solid @color-3;
-      background-color: @color-3;
-      padding: 10px 10px;
-      color: @color-7;
-      text-decoration: none;
       font-size: 11px;
-    }
   }
 }
 .charge{
@@ -99,43 +89,7 @@
     justify-content: space-around;
 
   }
-  &__item{
-    flex-basis: 200px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-around;
 
-    &_header{
-      background-color: @color-11;
-      color: @color-12;
-      padding: 20px 0;
-    }
-    &_point{
-      background-color: @color-8;
-      color: @color-11;
-      padding: 10px 0;
-      font-size: 12px;
-      border-bottom: 1px solid @color-13;
-
-      & > span{
-        font-size: 18px;
-      }
-    }
-    &_button{
-      background-color: @color-9;
-      padding: 20px 0;
-    }
-    &_link{
-      border: 1px solid @color-8;
-      background-color: @color-8;
-      padding: 5px 10px;
-      color: @color-7;
-      text-decoration: none;
-      font-size: 11px;
-    }
-  }
 }
 .contact{
   background-color: @color-1;

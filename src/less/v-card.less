@@ -1,0 +1,31 @@
+.v-card{
+  flex-basis: 200px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+
+  &_point{
+
+    padding: 10px 0;
+    font-size: 12px;
+
+
+    & > span{
+      font-size: 18px;
+    }
+  }
+  &_button{
+    background-color: @color-9;
+    padding: 20px 0;
+  }
+  &_link{
+    border: 1px solid @color-8;
+    background-color: @color-8;
+    padding: 5px 10px;
+    color: @color-7;
+    text-decoration: none;
+    font-size: 11px;
+  }
+}

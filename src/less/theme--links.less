@@ -1,0 +1,86 @@
+.theme-link--white{
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.4s;
+  color:  @color-2;
+
+  //font-size: 18px;
+//  text-align: center;
+  &:hover{
+    color: @color-7;
+    transition: 0.4s;
+  }
+}
+.theme-link--black{
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.4s;
+  color:  @color-7;
+
+  &:hover{
+    color:  #777;
+    transition: 0.4s;
+    background-color: @color-6;
+  }
+
+}
+.theme-link--d_gray{
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.4s;
+  color:  @color-10;
+
+  &:hover{
+    color:  (@color-10 - 40%);
+    text-shadow: (@color-10 + 25%);
+    transition: 0.4s;
+  }
+}
+.theme-link--l_gray{
+    text-decoration: none;
+    color:  @color-10;
+    background-color: @color-2;
+    font-size: 18px;
+    text-align: center;
+    transition: 0.4s;
+    cursor: pointer;
+
+    &:hover{
+      color:  (@color-10 - 40%);
+      text-shadow: (@color-10 + 25%);
+      transition: 0.4s;
+    }
+}
+.slider_control__item--arrow{
+  .theme-link--black;
+
+}
+.slider_control__item--active{
+  .theme-link--white;
+  background-color: @color-7;
+  &:hover{
+    color: @color-7;
+    background-color: @color-6;
+    transition: 0.4s;
+  }
+}
+.button{
+  display: block;
+  width: 100px;
+  height: 15px;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+}
+.button--grey{
+  border: 1px solid @color-3;
+  background-color: @color-3;
+  color: @color-7;
+  transition: 0.4s;
+
+  &:hover{
+    color: @color-3;
+    background-color: @color-7;
+    transition: 0.4s;
+  }
+}
