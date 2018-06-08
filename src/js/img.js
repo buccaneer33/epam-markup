@@ -1,0 +1,13 @@
+'use strict';
+import '../img/about.jpg';
+import '../img/footer1.jpg';
+import '../img/footer2.jpg';
+import '../img/img1.jpg';
+import '../img/img2.jpg';
+import '../img/img3.jpg';
+import '../img/img4.jpg';
+import '../img/img5.jpg';
+import '../img/img6.jpg';
+import '../img/img7.jpg';
+import '../img/img8.jpg';
+import '../img/img9.jpg';

@@ -5,17 +5,35 @@ const ExtractTextPlugin = require ('extract-text-webpack-plugin');
 const HtmlWebpackPlugin    = require('html-webpack-plugin');
 let FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
-const config = {
+/*const config = {
 	entry:{
-		js: './src/js/index.js'
-		//less: './src/less/main.less',
-		//img: './src/js/img.js'
-  },
+		js: '../src/js/index.js',
+		less: '../src/less/main.less',
+		img: '../src/img/img.js'
+		node: {
+		  fs: 'empty',
+		  net: 'empty'
+		},
+	},
+	output: {
+    path: path.resolve(__dirname, 'dist/js'),
+    filename: 'main.js'
+  }
+},*/
+//module.exports = config;
+module.exports = {
+
+	entry:{
+		js: './src/js/index.js',
+		less: './src/less/main.less',
+		img: './src/js/img.js'
+	},
 	output: {
     path: path.resolve(__dirname, 'dist/js'),
     filename: 'main.js'
   },
-  	module: {
+
+	module: {
 		rules: [
 				{
 					test: /\.js$/,
@@ -28,8 +46,7 @@ const config = {
 					test: /\.less$/,
 					use: ExtractTextPlugin.extract({
 						fallback: "style-loader",
-						use: ["css-loader", "less-loader"],
-						publicPath:'./css/'
+						use: ["css-loader", "less-loader"]
 					})
 				},{
 					test: /\.(png|jpg|gif)$/,
@@ -37,18 +54,20 @@ const config = {
 						  {
 							loader: 'file-loader',
 							options: {
-								name: '../img/[name].[ext]',
-								context: path.resolve(__dirname, "../img")
+								name: 'img/[name].[ext]'
+								//context: path.resolve(__dirname, "img")
 							}
 						  }
 						]
           }
 				
 		]
-  },
-      plugins: [
+  }, 
+	  
+	  
+    plugins: [
      new ExtractTextPlugin(
-		{filename:'../css/bundle.css'}
+		{filename:'bundle.css'}
 	 ),      
 	 new HtmlWebpackPlugin({
 			files: {
@@ -91,4 +110,3 @@ const config = {
   ]
   
 };
-module.exports = config;

@@ -7,9 +7,9 @@ let FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const config = {
 	entry:{
-		js: './src/js/index.js'
-		//less: './src/less/main.less',
-		//img: './src/js/img.js'
+		js: './src/js/index.js',
+		less: './src/less/main.less',
+		img: './src/js/img.js'
   },
 	output: {
     path: path.resolve(__dirname, 'dist/js'),
@@ -28,8 +28,7 @@ const config = {
 					test: /\.less$/,
 					use: ExtractTextPlugin.extract({
 						fallback: "style-loader",
-						use: ["css-loader", "less-loader"],
-						publicPath:'./css/'
+						use: ["css-loader", "less-loader"]
 					})
 				},{
 					test: /\.(png|jpg|gif)$/,
@@ -37,8 +36,8 @@ const config = {
 						  {
 							loader: 'file-loader',
 							options: {
-								name: '../img/[name].[ext]',
-								context: path.resolve(__dirname, "../img")
+								name: 'img/[name].[ext]'
+								//context: path.resolve(__dirname, "img")
 							}
 						  }
 						]
@@ -48,7 +47,7 @@ const config = {
   },
       plugins: [
      new ExtractTextPlugin(
-		{filename:'../css/bundle.css'}
+		{filename:'bundle.css'}
 	 ),      
 	 new HtmlWebpackPlugin({
 			files: {
