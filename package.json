@@ -4,6 +4,7 @@
   "description": "epam-markup",
   "main": "index.html",
   "scripts": {
+	"dev"  : "webpack --mode development",
     "build": "webpack -p",
     "watch": "webpack --watch"
   },

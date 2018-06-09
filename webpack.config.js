@@ -12,8 +12,8 @@ const config = {
 		//img: './src/js/img.js'
   },
 	output: {
-    path: path.resolve(__dirname, 'dist/js'),
-    filename: 'main.js'
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'js/main.js'
   },
   	module: {
 		rules: [
@@ -37,8 +37,8 @@ const config = {
 						  {
 							loader: 'file-loader',
 							options: {
-								name: '../img/[name].[ext]',
-								context: path.resolve(__dirname, "../img")
+								name: './img/[name].[ext]',
+								context: path.resolve(__dirname, "./img")
 							}
 						  }
 						]
@@ -48,12 +48,23 @@ const config = {
   },
       plugins: [
      new ExtractTextPlugin(
-		{filename:'../css/bundle.css'}
+		{filename:'./css/bundle.css'}
 	 ),      
 	 new HtmlWebpackPlugin({
-			files: {
-				"css": [ "css/.css" ],
-				"js" : [ "js/main.js"],
+		files: {
+			"css": [ "main.css" ],
+			"js" : [ "js/main.js"],
+			"chunks": {
+				  "head": {
+					"entry": "",
+					"css": [ "css/main.css" ]
+				  },
+				  "main": {
+					"entry": "js/main.js",
+					"css": []
+				  },
+			}
+				
 			},
 			title: 'Epam-Markup Http build',
 			//minify: {collapseWhitespace: true},
@@ -62,7 +73,7 @@ const config = {
         }),
 	new FaviconsWebpackPlugin({
   
-    logo: './src/img/like-favicon.png',  // Your source logo
+    logo: './assets/like-favicon.png',  // Your source logo
     prefix: 'icons-[hash]/',    // The prefix for all image files (might be a folder or a name)
     emitStats: false,    // Emit all stats of the generated icons
     statsFilename: 'iconstats-[hash].json',// The name of the json containing all favicon information
