@@ -1,0 +1,23 @@
+.progressbar--theme{
+  background: @progressbar__back--color;
+  border-radius: 0px;
+  overflow: hidden;
+  & > span{
+     text-align: center;
+     color: darken(@progressbar__back--color, 80%);
+     padding-top: 4px;
+     font-size: 11px;
+     display: block;
+     height: 100%;
+     background-color: darken(@progressbar__back--color, 40%);
+     background-image: -webkit-gradient(
+       linear,
+       left bottom,
+       left top,
+       color-stop(0, darken(@progressbar__back--color, 40%)),
+       color-stop(1, darken(@progressbar__back--color, 40%))
+      );
+     position: relative;
+     overflow: hidden;
+      }
+}

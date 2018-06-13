@@ -1,56 +1,66 @@
 .body--theme{
-  background-color: @color-1;
+  background-color: @base__back--color;
+  color: @base__font--color;
   margin: 0;
   padding: 0;
   font-family: 'PT_Sans-Web-Regular',  sans-serif;
 }
 .left_column--theme{
-  background-color: @color-2;
-  color: @color-10;
+  background-color: @left_column__back--color;
+  color: @left_column__font--color;
   font-size: 16px;
   text-align: center;
 }
 .navigation--theme{
     text-align: center;
-    background-color: @color-2;
-    color:  @color-10;
+    background-color: @left_column__back--color;
+    color:  @left_column__font--color;
     font-size: 11px;
   }
   .header--theme{
-    background-color: @color-1;
+    background-color: @base__back--color;
   }
 .skills--theme{
-  border-bottom: 1px solid  @color-1;
+  border-bottom: 1px solid  @base__back--color;
 }
 .v-card--black{
-  background-color: @color-11;
-  color: @color-12;
+  background-color: @v-card__back--color-dark;
+  color: @v-card__font--color-dark;
   font-size: 18px;
 
   &:hover{
-    background-color: @color-7;
-    color: @color-2;
+    background-color: darken(@v-card__back--color-dark, 50%);
+    color: lighten(@v-card__font--color-dark, 50%);
   }
 }
 .v-card--grey{
-  background-color: @color-8;
-  color: @color-11;
-  border-bottom: 1px solid @color-13;
+  background-color: @v-card__back--color-base;
+  color: @v-card__font--color-base;
+  border-bottom: 1px solid @v-card__border--color-base;
 
 }
 .v-card--d_grey{
-  background-color: @color-8;
-  color: @color-11;
+  background-color: darken(@v-card__back--color-base, 10%);
+  color: darken(@v-card__font--color-base, 10%);
 
   &:hover{
-    background-color: @color-1;
-    color: @color-7;
+    background-color: spin(@v-card__back--color-base, 30%);
+    color: spin(@v-card__font--color-base, 30%);;
   }
 }
 .content--theme{
-  color: @color-1;
-  background-color: @color-4;
+  background-color: @content__back--color;
+  color: @content__font--color;
 }
 .contact--theme{
-  background-color: @color-1;
+  background-color: @contact__back--color;
+  color: @contact__font--color;
+  border-bottom: 1px solid  @contact__back--color;
+}
+.about_me--theme{
+  border-bottom: 1px solid  @base__back--color;
+}
+.footer--theme{
+  background-color: @footer__back--color;
+  color: #000;
 }

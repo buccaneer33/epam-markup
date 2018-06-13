@@ -2,12 +2,12 @@
   cursor: pointer;
   text-decoration: none;
   transition: 0.4s;
-  color:  @color-2;
+  color:  @left_column__back--color;
 
   //font-size: 18px;
 //  text-align: center;
   &:hover{
-    color: @color-7;
+    color: @base__font--color;
     transition: 0.4s;
   }
 }
@@ -15,12 +15,12 @@
   cursor: pointer;
   text-decoration: none;
   transition: 0.4s;
-  color:  @color-7;
+  color:  @base__font--color;
 
   &:hover{
     color:  #777;
     transition: 0.4s;
-    background-color: @color-6;
+    background-color: @footer__back--color;
   }
 
 }
@@ -28,26 +28,26 @@
   cursor: pointer;
   text-decoration: none;
   transition: 0.4s;
-  color:  @color-10;
+  color:  @v-card__back--color-base;
 
   &:hover{
-    color:  (@color-10 - 40%);
-    text-shadow: (@color-10 + 25%);
+    color:  darken(@v-card__back--color-base, 20%);
+    text-shadow:  darken(@v-card__back--color-base, 40%);
     transition: 0.4s;
   }
 }
 .theme-link--l_gray{
     text-decoration: none;
-    color:  @color-10;
-    background-color: @color-2;
+    color:  @left_column__font--color;
+    background-color: @left_column__back--color;
     font-size: 18px;
     text-align: center;
     transition: 0.4s;
     cursor: pointer;
 
     &:hover{
-      color:  (@color-10 - 40%);
-      text-shadow: (@color-10 + 25%);
+      color:  darken( @left_column__font--color, 20%);
+      text-shadow: darken(@left_column__font--color, 15%);
       transition: 0.4s;
     }
 }
@@ -57,10 +57,10 @@
 }
 .slider_control__item--active{
   .theme-link--white;
-  background-color: @color-7;
+  background-color: @base__font--color;
   &:hover{
-    color: @color-7;
-    background-color: @color-6;
+    color: @base__font--color;
+    background-color: lighten(@base__font--color, 50%);;
     transition: 0.4s;
   }
 }
@@ -81,26 +81,33 @@
   text-decoration: none;
 }
 .button--grey{
-  border: 1px solid @color-1;
-  background-color: @color-1;
-  color: @color-7;
+  border: 1px solid @base__back--color;
+  background-color: @base__back--color;
+  color: @base__font--color;
   transition: 0.4s;
 
   &:hover{
-    color: @color-1;
-    background-color: @color-7;
+    color:@base__back--color;
+    background-color: @base__font--color;
     transition: 0.4s;
   }
 }
 .button--black{
-  border: 1px solid @color-7;
-  background-color: @color-7;
-  color: @color-2;
+  border: 1px solid @base__font--color;
+  background-color: @base__font--color;
+  color: @left_column__back--color;
   transition: 0.4s;
 
   &:hover{
-    color: @color-7;
-    background-color: @color-2;
+    color: @base__font--color;
+    background-color: @left_column__back--color;
     transition: 0.4s;
   }
+}
+.v-card_link--theme{
+  //border: 1px solid @color-8;
+  //background-color: @color-8;
+  //color: @color-7;
+  //text-decoration: none;
+  //font-size: 11px;
 }
