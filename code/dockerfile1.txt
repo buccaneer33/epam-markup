@@ -1,0 +1,30 @@
+FROM ubuntu:16.04 
+
+#Install node.js
+RUN apt-get update
+RUN apt-get -y upgrade
+RUN apt-get -y install npm 
+
+#make webpack global
+RUN npm install webpack -g
+
+# Create app directory
+WORKDIR /app
+
+# Install application dependencies
+COPY package.json /app
+
+# Install app dependencies
+RUN cd /app && \npm install
+
+ Bundle app source
+COPY /src /app/src
+    
+# Start building project 
+RUN npm run build
+
+# Expose port
+EXPOSE 8080
+
+# Start server
+CMD [ "npm", "server.js" ]
