@@ -5,6 +5,7 @@ services:
       context: ./code
       dockerfile: Dockerfile
     volumes:
-      - "./code:/app"
+      - "./code/src:/app/src"
+      - "./code/assets:/app/assets"
     ports:
       - "8080:8080"
